@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Pixel Monsters</title>
+	<meta charset="utf-8">
+
+    <link rel="stylesheet" href="../css/background.css">	
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">	
+	
+	<style>
+	  p {
+		background-color: #f7c8c8;
+		margin: 50px;
+		border-radius: 5px;
+		font-size: 135%;
+	}	
+		
+	  #map {
+		  height: 400px;
+		  width: 400px;
+		  margin: 0 auto;
+		}
+	
+	</style>
+</head>
+
+<body>
+  <div id="wrapper">
+	<header>
+		<h1>About Us</h1>
+	</header>
+	
+	<div class="topnav">
+	  <ul>
+		  <li><a href="../index.html">Home</a></li>
+		  <li><a href="about.html">About Us</a></li>
+		  <li><a href="registration.html">Registration Form</a></li>
+		  <li><a href="sources.html">Sources</a></li>
+	  </ul>
+	</div class="topnav">	  
+	  
+	
+<p>Pixel Monsters is an MMORPG created by Luong Incorporated at our location in West Mifflin, PA!
+    Here's where our headquarters is located if you'd like to stop by and greet our employees.</p>	
+	
+<div id="map"></div>
+
+<script>
+
+function initMap() {
+	var uluru = {lat: 40.33, lng: -79.92};
+	var map = new google.maps.Map(document.getElementById('map'), {
+	  zoom: 14,
+	  center: uluru});
+	
+	var marker = new google.maps.Marker({
+	  position: uluru,
+	  map: map});
+}
+</script>
+
+<script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8ya5WRRyeL37qvnKRwANVDog2EYJtOyg&callback=initMap">
+</script>
+	
+</body>
+
+<footer>
+	<br>
+	Copyright © Kyle Luong 2018
+	<br>
+	<a href="mailto:kyleluong@hotmail.com">kyleluong@hotmail.com</a>
+	<br>
+	<b>Page 2</b>
+</footer>
+
+</html>
